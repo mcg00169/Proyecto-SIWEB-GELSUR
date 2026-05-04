@@ -1,0 +1,49 @@
+/* Espaciado general */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Tarjetas */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Carousel */
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-item {
+    height: 300px;
+    }
+}
+
+.hero {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+.carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

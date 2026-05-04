@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pan de centeno",
+        "descripcion": "Pan saludable de centeno con semillas.",
+        "precio": 2.00,
+        "imagen": "../assets/img/producto1.jpeg"
+    },
+    {
+        "id": 2,
+        "nombre": "Galletas de chocolate",
+        "descripcion": "Galletas deliciosas con trocitos de chocolate.",
+        "precio": 2.50,
+        "imagen": "../assets/img/producto2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Muffin de chocolate",
+        "descripcion": "Delicioso muffin casero con chispas de chocolate.",
+        "precio": 1.50,
+        "imagen": "../assets/img/producto3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Pan de viena",
+        "descripcion": "Pan crujiente con sabor a ajo y hierbas. Perfecto para acompañar tus comidas.",
+        "precio": 1.80,
+        "imagen": "../assets/img/producto4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Pan con semillas",
+        "descripcion": "Pan cubierta con semillas de girasol, lino y sésamo. Ideal para un desayuno nutritivo.",
+        "precio": 2.20,
+        "imagen": "../assets/img/producto5.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Panecillos de queso",
+        "descripcion": "Panecillos suaves con queso rallado. Ideal para un aperitivo o snack.",
+        "precio": 1.70,
+        "imagen": "../assets/img/producto6.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Pan de cristal",
+        "descripcion": "Pan crujiente con miga ligera y aireada.",
+        "precio": 2.00,
+        "imagen": "../assets/img/producto7.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Croissants de mantequilla",
+        "descripcion": "Croissants hojaldrados con mantequilla de alta calidad.",
+        "precio": 1.50,
+        "imagen": "../assets/img/producto8.jpg"
+    }
+]

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>GELSUR S.L.</title>
+        <meta name="description" content="Generated with Layoutit" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Estilos personalizados -->
+        <link rel="stylesheet" href="../assets/css/styles.css" /> 
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <div id="navbar-container"></div>
+        <!-- CONTENIDO -->
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                                </svg>
+                                <a href="../index.html">Inicio</a>
+                            </li>
+                            <li class="breadcrumb-item" aria-current="page">
+                                <a href="#">Productos</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center my-4">Todos los productos</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" id="lista-productos"></div>
+                <!-- Los productos se cargarán aquí dinámicamente -->
+                <div class="col-md-4">
+                    <h4>Filtrar productos</h4>
+                    <hr class="my-4">
+                    <div class="mb-3">
+                        <label for="filtro-categoria" class="form-label" id="categoria">Categor&iacute;a</label>
+                        <select id="filtro-categoria" class="form-select">
+                            <option value="">Todas</option>
+                            <option value="pan">Pan</option>
+                            <option value="bolleria">Boller&iacute;a</option>
+                            <option value="pasteleria">Pasteler&iacute;a</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="filtro-precio" class="form-label" id="precio">Precio</label>
+                        <input
+                            class="form-range"
+                            type="range"
+                            min="0"
+                            max="20"
+                            step="0.5"
+                            id="form-range-66a118f9-479c-4140-af2b-d95dcbf7445c"
+                        />
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div id="footer-container"></div>
+        <!-- Bootstrap JS -->
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Script para cargar componentes -->
+        <script src="../assets/js/loadcomponentspages.js"></script>
+        <!-- Script para cargar productos -->
+        <script src="../assets/js/loadproducts.js"></script>
+    </body>
+</html>
