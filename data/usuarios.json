@@ -1,0 +1,24 @@
+[
+    {
+        "id": 0,
+        "nombre": "Manuel",
+        "apellidos": "García",
+        "correo": "manuel.garcia@example.com",
+        "nickname": "manuelg",
+        "password": "admin123",
+        "telefono": "621234567",
+        "direccion": "Calle Historica 456",
+        "rol": "administrador"
+    },
+    {
+        "id": 1,
+        "nombre": "Juan",
+        "apellidos": "Pérez",
+        "correo": "juan.perez@example.com",
+        "nickname": "juanp",
+        "password": "empleado123",
+        "telefono": "650123456",
+        "direccion": "Calle Principal 123",
+        "rol": "empleado"
+    }
+]

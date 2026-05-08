@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GELSUR S.L.</title>
         <meta name="description" content="Generated with Layoutit" />
         <!-- Bootstrap -->
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
         <!-- Estilos personalizados -->
-        <link rel="stylesheet" href="../assets/css/styles.css" /> 
+        <link rel="stylesheet" href="../assets/css/styles.css" />
     </head>
     <body>
         <!-- NAVBAR -->
@@ -26,45 +26,28 @@
                                 <a href="../index.html">Inicio</a>
                             </li>
                             <li class="breadcrumb-item" aria-current="page">
-                                <a href="#">Carrito</a>
+                                <a href="#">B&uacute;squeda</a>
                             </li>
                         </ol>
                     </nav>
                 </div>
             </div>
-            <h1 class="mb-4">Carrito</h1>
-            <div class="row">
-                <!-- LISTA DE PRODUCTOS -->
-                <div class="col-md-8" id="carrito-lista"></div> 
-                <!-- RESUMEN DEL PEDIDO -->
-                <div class="col-md-4">
-                    <div class="card p-3 shadow-sm">
-                        <h4>Pedido</h4>
-                        <p>Subtotal: <span id="subtotal">0.00</span> €</p>
-                        <p>Gastos de env&iacute;o: <span id="envio">0.00</span> €</p>
-                        <h5>Total: <span id="total">0.00</span> €</h5>
-
-                        <a class="btn btn-warning w-100 mt-3" href="../pages/pago.html">Pagar</a>
-
-                        <p class="small text-muted mt-3">
-                            Es posible que se reajusten los precios antes de confirmar el pedido.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- PRODUCTOS RELACIONADOS -->
-            <h3 class="mt-5">Productos relacionados</h3>
-            <div class="row g-4" id="relacionados"></div>
-            
         </div>
-
+        <div class="container py-5">
+            <h3 class="text-center" id="texto-resultados"></h3>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-12" id="lista-productos"></div>
+                <!-- Aquí se muestran la lista de resultados -->
+            </div>
+        </div>
         <!-- FOOTER -->
         <div id="footer-container"></div>
         <!-- Bootstrap JS -->
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
         <!-- Script para cargar componentes -->
         <script src="../assets/js/loadcomponentspages.js"></script>
-        <!-- Script para cargar los datos del carrito -->
-        <script src="../assets/js/loadcart.js"></script>
+        <!-- Script para mostrar los resultados -->
+        <script src="../assets/js/buscar.js"></script>
     </body>
 </html>

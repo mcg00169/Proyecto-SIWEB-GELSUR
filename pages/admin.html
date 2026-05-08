@@ -23,48 +23,36 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                                     <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
                                 </svg>
-                                <a href="../index.html">Inicio</a>
+                                <a href="#" onclick="$(alert('Para salir del administración, presione el botón de abajo'))">Inicio</a>
                             </li>
                             <li class="breadcrumb-item" aria-current="page">
-                                <a href="#">Carrito</a>
+                                <a href="#">Administraci&oacute;n</a>
                             </li>
                         </ol>
                     </nav>
                 </div>
             </div>
-            <h1 class="mb-4">Carrito</h1>
-            <div class="row">
-                <!-- LISTA DE PRODUCTOS -->
-                <div class="col-md-8" id="carrito-lista"></div> 
-                <!-- RESUMEN DEL PEDIDO -->
-                <div class="col-md-4">
-                    <div class="card p-3 shadow-sm">
-                        <h4>Pedido</h4>
-                        <p>Subtotal: <span id="subtotal">0.00</span> €</p>
-                        <p>Gastos de env&iacute;o: <span id="envio">0.00</span> €</p>
-                        <h5>Total: <span id="total">0.00</span> €</h5>
-
-                        <a class="btn btn-warning w-100 mt-3" href="../pages/pago.html">Pagar</a>
-
-                        <p class="small text-muted mt-3">
-                            Es posible que se reajusten los precios antes de confirmar el pedido.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- PRODUCTOS RELACIONADOS -->
-            <h3 class="mt-5">Productos relacionados</h3>
-            <div class="row g-4" id="relacionados"></div>
-            
         </div>
+        <div class="container py-5">
+            <h1>Administraci&oacute;n</h1>
 
-        <!-- FOOTER -->
+            <h3 class="mt-4">Pedidos</h3>
+            <div id="lista-pedidos" class="row"></div>
+
+            <h3 class="mt-4">Productos</h3>
+            <div id="lista-productos" class="row"></div>
+
+            <h3 class="mt-4">Usuarios</h3>
+            <div id="lista-usuarios" class="row"></div>
+        </div>
+        <div class="container py-5">
+            <a class="btn btn-danger" href="../index.html">Salir</a>
+        </div>
         <div id="footer-container"></div>
-        <!-- Bootstrap JS -->
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>
-        <!-- Script para cargar componentes -->
-        <script src="../assets/js/loadcomponentspages.js"></script>
-        <!-- Script para cargar los datos del carrito -->
-        <script src="../assets/js/loadcart.js"></script>
+            <!-- JavaScript -->
+            <script src="../assets/js/loadcomponentspages.js"></script>
+            <script src="../assets/js/listadoproductos.js"></script>
+            <script src="../assets/js/listadopedidos.js"></script>
+            <script src="../assets/js/listadousuarios.js"></script>
     </body>
 </html>

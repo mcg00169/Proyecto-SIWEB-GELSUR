@@ -13,7 +13,6 @@
     <body>
         <!-- NAVBAR -->
         <div id="navbar-container"></div>
-        <!-- CONTENIDO -->
         <div class="container py-5">
             <div class="row">
                 <div class="col-12">
@@ -26,45 +25,42 @@
                                 <a href="../index.html">Inicio</a>
                             </li>
                             <li class="breadcrumb-item" aria-current="page">
-                                <a href="#">Carrito</a>
+                                <a href="#">Devoluci&oacute;n de pedidos</a>
                             </li>
                         </ol>
                     </nav>
                 </div>
             </div>
-            <h1 class="mb-4">Carrito</h1>
-            <div class="row">
-                <!-- LISTA DE PRODUCTOS -->
-                <div class="col-md-8" id="carrito-lista"></div> 
-                <!-- RESUMEN DEL PEDIDO -->
-                <div class="col-md-4">
-                    <div class="card p-3 shadow-sm">
-                        <h4>Pedido</h4>
-                        <p>Subtotal: <span id="subtotal">0.00</span> €</p>
-                        <p>Gastos de env&iacute;o: <span id="envio">0.00</span> €</p>
-                        <h5>Total: <span id="total">0.00</span> €</h5>
-
-                        <a class="btn btn-warning w-100 mt-3" href="../pages/pago.html">Pagar</a>
-
-                        <p class="small text-muted mt-3">
-                            Es posible que se reajusten los precios antes de confirmar el pedido.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- PRODUCTOS RELACIONADOS -->
-            <h3 class="mt-5">Productos relacionados</h3>
-            <div class="row g-4" id="relacionados"></div>
-            
         </div>
+        <div class="container py-5">
+            <h3 class="text-center">Devoluci&oacute;n de pedidos</h3>
+            <form id="form-devolucion" class="mt-4">
 
+                <label class="form-label">Número de pedido</label>
+                <input class="form-control mb-3" id="pedido" required>
+
+                <label class="form-label">Motivo de la devolución</label>
+                <select class="form-select mb-3" id="motivo" required>
+                    <option value="">Selecciona un motivo</option>
+                    <option value="defectuoso">Producto defectuoso</option>
+                    <option value="equivocado">Producto equivocado</option>
+                    <option value="no-satisfecho">No estoy satisfecho</option>
+                </select>
+
+                <label class="form-label">Descripción adicional</label>
+                <textarea class="form-control mb-3" id="descripcion" rows="4"></textarea>
+
+                <button class="btn btn-warning w-100">Enviar solicitud</button>
+            </form>
+            <div id="lista-deseos"></div>
+        </div>
         <!-- FOOTER -->
         <div id="footer-container"></div>
         <!-- Bootstrap JS -->
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
         <!-- Script para cargar componentes -->
         <script src="../assets/js/loadcomponentspages.js"></script>
-        <!-- Script para cargar los datos del carrito -->
-        <script src="../assets/js/loadcart.js"></script>
+        <!-- Script para proceder la devolución -->
+        <script src="../assets/js/devolucion.js"></script>
     </body>
 </html>

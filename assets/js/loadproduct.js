@@ -22,9 +22,10 @@ async function cargarProducto() {
             </div>
             <div class="col-md-6">
                 <h1>${producto.nombre}</h1>
-                <p>${producto.descripcion}</p>
+                <p>${producto.descripcion_larga}</p>
                 <p class="fw-bold">${producto.precio.toFixed(2)} €</p>
                 <button class="btn btn-success" onclick="agregarAlCarrito(${producto.id})">Añadir al carrito</button>
+                <button class="btn btn-warning" onclick="agregarDeseo(${producto.id})">Añadir a la lista de deseos</button>
             </div>
         </div>
     `;

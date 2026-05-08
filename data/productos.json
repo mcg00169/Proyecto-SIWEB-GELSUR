@@ -3,56 +3,81 @@
         "id": 1,
         "nombre": "Pan de centeno",
         "descripcion": "Pan saludable de centeno con semillas.",
+        "descripcion_larga": "Pan saludable de centeno con semillas. Peso: 250g. Precio por kg: 8.70 €. Elaborado con masa madre.",
         "precio": 2.00,
+        "categoria": "pan-artesanal",
         "imagen": "../assets/img/producto1.jpeg"
     },
     {
         "id": 2,
         "nombre": "Galletas de chocolate",
         "descripcion": "Galletas deliciosas con trocitos de chocolate.",
+        "descripcion_larga": "Galletas deliciosas con trocitos de chocolate. Peso: 100g. Precio por unidad: 2.50 €. Elaborado con masa madre.",
         "precio": 2.50,
+        "categoria": "bolleria",
         "imagen": "../assets/img/producto2.jpg"
     },
     {
         "id": 3,
         "nombre": "Muffin de chocolate",
         "descripcion": "Delicioso muffin casero con chispas de chocolate.",
+        "descripcion_larga": "Delicioso muffin casero con chispas de chocolate. Peso: 120g. Precio por unidad: 1.50 €. Elaborado con cacao puro.",
         "precio": 1.50,
+        "categoria": "bolleria",
         "imagen": "../assets/img/producto3.jpg"
     },
     {
         "id": 4,
         "nombre": "Pan de viena",
         "descripcion": "Pan crujiente con sabor a ajo y hierbas. Perfecto para acompañar tus comidas.",
+        "descripcion_larga": "Pan crujiente con sabor a ajo y hierbas. Perfecto para acompañar tus comidas. Peso: 130g. Precio por unidad: 7.40 €. Elaborado con masa madre y agua.",
         "precio": 1.80,
+        "categoria": "pan-precocinado",
         "imagen": "../assets/img/producto4.jpg"
     },
     {
         "id": 5,
         "nombre": "Pan con semillas",
         "descripcion": "Pan cubierta con semillas de girasol, lino y sésamo. Ideal para un desayuno nutritivo.",
+        "descripcion_larga": "Pan cubierta con semillas de girasol, lino y sésamo. Ideal para un desayuno nutritivo. Peso: 100g. Precio por unidad: 2.20 €. Elaborado con semillas de sésamo.",
         "precio": 2.20,
+        "categoria": "pan-artesanal",
         "imagen": "../assets/img/producto5.jpg"
     },
     {
         "id": 6,
         "nombre": "Panecillos de queso",
         "descripcion": "Panecillos suaves con queso rallado. Ideal para un aperitivo o snack.",
+        "descripcion_larga": "Panecillos suaves con queso rallado. Ideal para un aperitivo o snack. Peso: 150g. Precio por unidad: 1.70 €. Elaborado con queso.",
         "precio": 1.70,
+        "categoria": "pan-precocinado",
         "imagen": "../assets/img/producto6.png"
     },
     {
         "id": 7,
         "nombre": "Pan de cristal",
         "descripcion": "Pan crujiente con miga ligera y aireada.",
+        "descripcion_larga": "Pan crujiente con miga ligera y aireada. Peso: 300g. Precio por kg: 10.60 €. Elaborado con masa madre y migas.",
         "precio": 2.00,
+        "categoria": "pan-precocinado",
         "imagen": "../assets/img/producto7.jpg"
     },
     {
         "id": 8,
         "nombre": "Croissants de mantequilla",
         "descripcion": "Croissants hojaldrados con mantequilla de alta calidad.",
+        "descripcion_larga": "Croissants hojaldrados con mantequilla de alta calidad. Peso: 80g. Precio por unidad: 1.50 €. Elaborado con masa blanda y mantequilla.",
         "precio": 1.50,
+        "categoria": "bolleria",
         "imagen": "../assets/img/producto8.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Tarta de manzana",
+        "descripcion": "Tarta casera con manzanas frescas y canela.",
+        "descripcion_larga": "Tarta casera con manzanas frescas y canela. Peso: 500g. Precio por unidad: 10.00 €. Elaborado con manzanas, caramelo y canela.",
+        "precio": 10.00,
+        "categoria": "tartas",
+        "imagen": "../assets/img/producto9.jpg"
     }
 ]

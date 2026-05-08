@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
         <a class="navbar-brand fw-bold" href="../index.html">
-            GELSUR S.L.
+            <img src="../assets/img/logo_gelsursl.png" class="w-25" alt="logo_gelsursl">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-c28b3154-4f05-4c8c-b494-fe28926106f9" aria-controls="navbar-collapse-c28b3154-4f05-4c8c-b494-fe28926106f9" aria-expanded="false" aria-label="Barra de navegación">
             <span class="navbar-toggler-icon"></span>
@@ -15,7 +15,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-c28b3154-4f05-4c8c-b494-fe28926106f9">
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="../pages/buscar.html?categoria=pan-artesanal">
                                 Pan artesanal
                             </a>
                         </li>
@@ -23,7 +23,7 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="../pages/buscar.html?categoria=pan-precocinado">
                                 Pan precocinado
                             </a>
                         </li>
@@ -31,7 +31,7 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="../pages/buscar.html?categoria=bolleria">
                                 Boller&iacute;a
                             </a>
                         </li>
@@ -39,7 +39,7 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="../pages/buscar.html?categoria=tartas">
                                 Tartas y postres
                             </a>
                         </li>
@@ -51,7 +51,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-c28b3154-4f05-4c8c-b494-fe28926106f9">
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="../pages/listapedidos.html">
                                 Lista de pedidos
                             </a>
                         </li>
@@ -59,7 +59,7 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="../pages/listadeseos.html">
                                 Lista de deseos
                             </a>
                         </li>
@@ -67,7 +67,7 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="../pages/devolucion.html">
                                 Devoluci&oacute;n de pedidos
                             </a>
                         </li>
@@ -87,7 +87,7 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="../pages/noticias.html">
                                 Noticias
                             </a>
                         </li>
@@ -103,8 +103,8 @@
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <form class="d-flex" id="form-busqueda" role="search">
+                    <input class="form-control me-2" id="input-busqueda" type="search" placeholder="Buscar" aria-label="Buscar">
                     <button class="btn btn-warning" type="submit">
                         Buscar
                     </button>
@@ -121,3 +121,14 @@
         </div>
     </div>
 </nav>
+<script>
+    document.addEventListener("submit", function(e) {
+        if (e.target && e.target.id === "form-busqueda") {
+            e.preventDefault();
+            const texto = document.getElementById("input-busqueda").value.trim();
+            if (texto !== "") {
+                window.location.href = "../pages/buscar.html?texto=" + encodeURIComponent(texto);
+            }
+        }
+    });
+</script>

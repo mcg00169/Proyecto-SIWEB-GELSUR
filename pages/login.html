@@ -26,45 +26,29 @@
                                 <a href="../index.html">Inicio</a>
                             </li>
                             <li class="breadcrumb-item" aria-current="page">
-                                <a href="#">Carrito</a>
+                                <a href="#">Iniciar sesi&oacute;n</a>
                             </li>
                         </ol>
                     </nav>
                 </div>
             </div>
-            <h1 class="mb-4">Carrito</h1>
-            <div class="row">
-                <!-- LISTA DE PRODUCTOS -->
-                <div class="col-md-8" id="carrito-lista"></div> 
-                <!-- RESUMEN DEL PEDIDO -->
-                <div class="col-md-4">
-                    <div class="card p-3 shadow-sm">
-                        <h4>Pedido</h4>
-                        <p>Subtotal: <span id="subtotal">0.00</span> €</p>
-                        <p>Gastos de env&iacute;o: <span id="envio">0.00</span> €</p>
-                        <h5>Total: <span id="total">0.00</span> €</h5>
-
-                        <a class="btn btn-warning w-100 mt-3" href="../pages/pago.html">Pagar</a>
-
-                        <p class="small text-muted mt-3">
-                            Es posible que se reajusten los precios antes de confirmar el pedido.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- PRODUCTOS RELACIONADOS -->
-            <h3 class="mt-5">Productos relacionados</h3>
-            <div class="row g-4" id="relacionados"></div>
-            
         </div>
+        <div class="container py-5">
+            <h3 class="text-center">Iniciar sesi&oacute;n</h3>
 
+            <form id="form-login" class="mb-4">
+                <input id="usuario" class="form-control mb-3" placeholder="Usuario" required>
+                <input id="password" type="password" class="form-control mb-3" placeholder="Contraseña" required>
+                <button class="btn btn-warning w-100 mt-3">Entrar</button>
+            </form>
+        </div>
         <!-- FOOTER -->
         <div id="footer-container"></div>
         <!-- Bootstrap JS -->
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
         <!-- Script para cargar componentes -->
         <script src="../assets/js/loadcomponentspages.js"></script>
-        <!-- Script para cargar los datos del carrito -->
-        <script src="../assets/js/loadcart.js"></script>
+        <!-- Script para comprobar los datos del usuario -->
+        <script src="../assets/js/checklogin.js"></script>
     </body>
 </html>

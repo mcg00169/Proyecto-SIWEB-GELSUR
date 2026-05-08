@@ -1,30 +1,13 @@
-let productos = []
 /* Función asíncrona para cargar productos desde un archivo JSON */
 async function cargarProductos() {
     try {
         const response = await fetch('../data/productos.json');
-        productos = await response.json();
-        aplicarFiltros(); // Mostrar todos los productos al cargar la página
+        const productos = await response.json();
+        mostrarProductos(productos);
 
     }  catch (error) {
         console.error('Error al cargar los productos: ', error);
-    }
-}
-
-function aplicarFiltros() {
-    const texto = document.getElementById("filtro-buscar").value.toLowerCase();
-    const categoria = document.getElementById("filtro-categoria").value;
-    const precioMax = parseFloat(document.getElementById("filtro-precio").value);
-
-    const filtrados = productos.filter(p => {
-        const coincideTexto = p.nombre.toLowerCase().includes(texto);
-        const coincideCategoria = categoria === "" || p.categoria === categoria;
-        const coincidePrecio = p.precio <= precioMax;
-
-        return coincideTexto && coincideCategoria && coincidePrecio;
-    });
-
-    mostrarProductos(filtrados);
+    }  
 }
 
 /* Función para mostrar los productos en el DOM */
@@ -44,7 +27,6 @@ function mostrarProductos(listaProductos) {
                             <h5 class="card-title">${producto.nombre}</h5>
                             <p class="card-text">${producto.descripcion_larga}</p>
                             <p class="fw-bold">${producto.precio.toFixed(2)} €</p>
-                            <a href="producto.html?id=${producto.id}" class="btn btn-primary">Ver producto</a>
                         </div>
                     </div>
                 </div>
@@ -53,8 +35,4 @@ function mostrarProductos(listaProductos) {
     })
 }
 
-document.getElementById("filtro-precio").addEventListener("input", () => {
-    document.getElementById("precio-valor").textContent = document.getElementById("filtro-precio").value + " €";
-});
-document.getElementById("aplicar-filtros").addEventListener("click", cargarProductos);
 cargarProductos();

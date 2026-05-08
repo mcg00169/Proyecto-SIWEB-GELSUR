@@ -25,46 +25,45 @@
                                 </svg>
                                 <a href="../index.html">Inicio</a>
                             </li>
+                            <li class="breadcrumb-item">
+                                <a href="../pages/carrito.html">Carrito</a>
+                            </li>
                             <li class="breadcrumb-item" aria-current="page">
-                                <a href="#">Carrito</a>
+                                <a href="#">Pago</a>
                             </li>
                         </ol>
                     </nav>
                 </div>
             </div>
-            <h1 class="mb-4">Carrito</h1>
-            <div class="row">
-                <!-- LISTA DE PRODUCTOS -->
-                <div class="col-md-8" id="carrito-lista"></div> 
-                <!-- RESUMEN DEL PEDIDO -->
-                <div class="col-md-4">
-                    <div class="card p-3 shadow-sm">
-                        <h4>Pedido</h4>
-                        <p>Subtotal: <span id="subtotal">0.00</span> €</p>
-                        <p>Gastos de env&iacute;o: <span id="envio">0.00</span> €</p>
-                        <h5>Total: <span id="total">0.00</span> €</h5>
-
-                        <a class="btn btn-warning w-100 mt-3" href="../pages/pago.html">Pagar</a>
-
-                        <p class="small text-muted mt-3">
-                            Es posible que se reajusten los precios antes de confirmar el pedido.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- PRODUCTOS RELACIONADOS -->
-            <h3 class="mt-5">Productos relacionados</h3>
-            <div class="row g-4" id="relacionados"></div>
-            
         </div>
+        <!-- PAGO -->
+        <div class="container py-5">
+            <h2 class="text-center">Finalizar compra</h2>
 
+            <form id="form-pago" action="#" class="mt-4">
+                <h4>Datos del comprador</h4>
+                <input class="form-control mb-3" id="cliente" placeholder="Nombre completo" required>
+                <input class="form-control mb-3" placeholder="Dirección" required>
+                <input class="form-control mb-3" placeholder="Ciudad" required>
+                <hr class="my-4">
+                <h4>M&eacute;todo de pago</h4>
+                <input class="form-control mb-3" id="numero-tarjeta" placeholder="Número de tarjeta" required>
+                <input class="form-control mb-3" id="fecha-caducidad" placeholder="Fecha de caducidad" required>
+                <input class="form-control mb-3" placeholder="CVV" required>
+
+                <button class="btn btn-warning w-100 mt-3">Pagar</button>
+            </form>
+            <p class="small text-muted mt-3">
+                Todos los datos del comprador y de la tarjeta est&aacute;n sujetas a nuestros <a href="../pages/terms-conditions.html" target="_blank">T&eacute;rminos y condiciones</a>. Consulta esta p&aacute;gina para visualizarlos.
+            </p>
+        </div>
         <!-- FOOTER -->
         <div id="footer-container"></div>
         <!-- Bootstrap JS -->
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
         <!-- Script para cargar componentes -->
         <script src="../assets/js/loadcomponentspages.js"></script>
-        <!-- Script para cargar los datos del carrito -->
-        <script src="../assets/js/loadcart.js"></script>
+        <!-- Script para cargar la simulación del pago-->
+         <script src="../assets/js/simulacionpago.js"></script>
     </body>
 </html>

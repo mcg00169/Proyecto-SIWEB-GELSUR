@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "cliente": "David López",
+        "fecha": "2024-06-01",
+        "total": 25.50,
+        "productos": [
+            {
+                "nombre": "Pan integral",
+                "cantidad": 2,
+                "precio": 3.00
+            },
+            {
+                "nombre": "Croissant",
+                "cantidad": 4,
+                "precio": 2.50
+            },
+            {
+                "nombre": "Tarta de manzana",
+                "cantidad": 1,
+                "precio": 10.00
+            }
+        ],
+        "estado": "En proceso"
+    }
+]
